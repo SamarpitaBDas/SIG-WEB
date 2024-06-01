@@ -1,0 +1,525 @@
+body {
+    background-color: #e5e7ea;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px; 
+}
+
+.grid-item1 {
+    position: sticky;
+    top: 0;
+    grid-column: 1 / span 1;
+    width: 200px;
+    height: 100vh; /* Adjust the height as needed */
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    z-index: 1; /* Ensure it appears above other content */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+
+.grid-item2{
+    grid-column: 2 / span 1;
+    width: 700px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.grid-item3{
+    grid-column: 2 / span 1; 
+    width: 700px;
+    height: 300px;
+    margin-top: -657px; 
+    border-radius: 20px;
+}
+
+.grid-item4{
+    grid-column: 2 / span 1;
+    width: 700px;
+    height: 700px;
+    margin-top: -315px; 
+    border-radius: 20px;
+}
+
+.grid-item5{
+    grid-column: 3 / span 1;
+    width: 470px;
+    height: 25px;
+    margin-top: -760px;
+    border-radius: 20px;
+}
+
+.grid-item6{
+    grid-column: 3 / span 1;
+    width: 470px;
+    height: 450px;
+    margin-top: -1120px;
+    border-radius: 20px;
+}
+
+.grid-item7{
+    grid-column: 3 / span 1;
+    width: 470px;
+    height: 250px;
+    margin-top: -620px;
+    border-radius: 20px;
+}
+
+/* New positioning for grid item 8 and grid item 9 */
+.grid-item8{
+    grid-column: 3 / span 1;
+    width: 200px;
+    height: 250px;
+    margin-top: -325px;
+    border-radius: 20px;
+}
+.grid-item9 {
+    grid-column: 3 / span 1;
+    width: 210px;
+    height: 250px;
+    margin-top: -330px; /* Adjust for alignment */
+    margin-left: 255px; /* To position on the right of grid item 8 */
+    border-radius: 20px;
+}
+
+.grid-item2,
+.grid-item3,
+.grid-item4,
+.grid-item5,
+.grid-item6,
+.grid-item7,
+.grid-item9 {
+    background-color: #ffffff; 
+    padding: 20px;
+    text-align: center;
+    position:relative;
+}
+.grid-item8{
+    background-color: #1c1c27; 
+    padding: 20px;
+    text-align: center;
+}
+.tab {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* Style for active tab */
+.tab.active {
+    background-color: #f2f2f2;
+}
+.logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 130px;
+    border-radius: 20px;
+}
+.logo1{
+    width: 100px;
+    height: 75px;
+    border-radius: 0px;
+    margin-top: 10px;
+    margin-bottom: -200px;
+    margin-right: 130px;
+    border-radius: 20px;
+}
+.button2{
+    height: 70px;
+    width:200px;
+    margin-left: 505px;
+    margin-bottom: 70px;
+    margin-top: -88px;
+    z-index: 1;
+    border-radius: 20px;
+    background-color:#e2dcf5;
+
+}
+.chart {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-end;
+    height: 200px;
+    margin-top: 40px;
+    margin-bottom: -200px;
+    position: relative;
+    z-index: 2;
+}
+.dayname {
+    position: fixed;
+    color: #67676f;
+    display: flex;
+    font-size: smaller;
+    justify-content: space-between;
+    position:relative;
+    width: 100%; /* Take full width */
+    margin-top: 170px;     
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bardark {
+    width: 60px;
+    background-color: #2aa7ff;
+    border-radius: 10px;
+}
+.chartback {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-end;
+    height: 200px;
+    margin-top: -60px;
+    margin-bottom: -175px;
+    position: relative;
+    z-index: 1;
+}
+.barlight {
+    height: 150px;
+    width: 60px; /* Adjust the width of the bars */
+    background-color: #dff2ff; /* Dark color */
+    border-radius: 10px;
+}
+.head{
+    margin-left:20px;
+    font-size: large;
+    text-align: left;
+    
+}
+.progress{
+    margin-top: -100px;
+    margin-bottom:40px;
+    margin-left:150px;
+    width:50px;
+    height:50px;
+}
+.heading{
+    margin-top: -7px;
+    margin-right: 100px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.money{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: -10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.grid-headings{
+    text-align: left;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.time{
+    text-align:left;margin-top:-10px
+}
+.time1{
+    text-align: right;
+    margin-top: -20px;
+    font-size: x-large;
+    font-weight: bold;
+    color: #2aa7ff;
+    margin-right: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bardark:nth-child(1){
+    height: 80px;
+}
+.bardark:nth-child(2){
+    height: 100px;
+}
+.bardark:nth-child(3){
+    height: 120px;
+}
+.bardark:nth-child(4){
+    height: 50px;
+}
+.time3{
+    position: fixed;
+    color: #67676f;
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+    font-size: smaller;
+    width: 100%; /* Take full width */
+    margin-top: -40px;   
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.day{
+    text-align: right;
+    margin-top: -21px;
+    font-size: large;
+    font-weight: bold;
+    color: #2aa7ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tasks{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.total{
+    margin-top: -20px;
+    text-align: right;
+    margin-right: 200px;
+    font-size: 70px;
+}
+.completed{
+    margin-top: -80px;
+    text-align: right;
+    margin-right: 40px;
+    font-size: 70px;
+}
+.subhead{
+    font-size: larger;
+    text-align: left;
+    margin-top: -40px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.subtitle{
+    text-align: left;
+    margin-top: -47px;
+    margin-left: 70px;
+    color: #67676f;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.subtitle1{
+    text-align: left;
+    margin-top: 20px;
+    text-align: right;
+    margin-right: 35px;
+    color: #67676f;
+}
+.rectangle {
+    position: relative;
+    width: 700px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+.line {
+    position: absolute;
+    width: calc(100% - 4px);
+    border-top: 2px solid #777777;
+}
+
+.line-above {
+    top: 0;
+}
+
+.line-below {
+    bottom: 0;
+}
+.content {
+    font-size: large;
+    color: #67676f;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+/* Styling for the task1 structure */
+.task1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.task1 label {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+.checkbox {
+    margin-top: 40px;
+}
+.content2,
+.content3,
+.content4
+.content5
+.content1 {
+    font-size: large;
+    color: #000000;
+}
+/* Styling for the task1 structure */
+.task1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.task1 label {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+/* Styling for the status box */
+.status-box {
+    display: inline-block;
+    padding: 5px 10px; /* Adjust border color and width as needed */
+    border-radius: 20px;
+    background-color: #90cdff; /* Adjust background color as needed */
+}
+/* Styling for the task1 structure */
+.task1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+.finish-box {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #f0f0f0; /* Adjust background color as needed */
+}
+.button3{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width:200px;
+    
+}
+.search,
+.mail,
+.layout{
+    height: 40px;
+    width: 50px;
+    border-radius: 10px;
+    margin-left: 20px;
+    background-color: #ededed;
+    margin-top: -10px;
+}
+.profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width:200px;
+    margin-left: 250px;
+    margin-top: -45px;
+}
+.pfp{
+    height:50px;
+    width: 50px;
+    border-radius: 40px;
+}
+.per{
+    margin-top: 10px;
+    text-align: left;
+    margin-right: 200px;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.work{
+    text-align: left;
+    color: #67676f;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dayname2 {
+    position: fixed;
+    color: #67676f;
+    display: flex;
+    font-size: smaller;
+    justify-content: space-between;
+    position:relative;
+    width: 100%; /* Take full width */
+    margin-top: 50px;     
+    font-family: Arial, Helvetica, sans-serif;
+}
+.graph{
+    margin-top: 30px;
+}
+.button4{
+    margin-top: -150px;
+}
+.inprogress,
+.finish,
+.todo{
+    text-align: center;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 250px;
+    background-color: #ededed;
+    margin-top: 10px;
+}
+.graph2{
+    margin-top: 25px;
+}
+.subhead2{
+    position: fixed;
+    color: #67676f;
+    display: flex;
+    font-size: smaller;
+    justify-content: space-between;
+    position:relative;
+    width: 100%; /* Take full width */
+    margin-top: 20px;  
+    margin-left: 5px;
+    margin-right: 10px;   
+    font-family: Arial, Helvetica, sans-serif;
+}
+.permonth{
+    color:aliceblue;text-align: left;margin-top:-10px;
+}
+.num{
+    color:aliceblue;text-align: left;margin-top:-5px;font-size: 40px;
+}
+.project{
+    color:aliceblue;text-align: left;margin-top:-40px;
+}
+.achieve{
+    margin-top: 20px;
+}
+.tabs{
+    position: fixed;
+    font-size: smaller;
+    justify-content: space-between;
+    position:relative;
+    width: 100%;
+    margin-top: 20px;    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Dashboard,
+.Timesheets,
+.Activity,
+.Insights,
+.Management,
+.Reports,
+.Teams,
+.Settings{
+    margin-top: 40px;
+    text-align: left;
+    margin-left: 50px;
+    font-size:large;
+
+}
+.logoname{
+    font-size: xx-large;
+    font-weight: 300;
+    margin-top: -100px;
+    text-align: left;
+    margin-left: 80px;
+}
